@@ -1,0 +1,18 @@
+{
+  "name": "webpack-setup",
+  "version": "1.0.0",
+  "description": "A Webpack tutorial to help you stop baging your head against the wall ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/server.js",
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
