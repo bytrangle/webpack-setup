@@ -1,12 +1,5 @@
-function generateRandomString() {
-  function randStr() {
-    return Math.random()
-      .toString(36)
-      .substring(2, 15);
-  }
+import generateRandomString from "./utils/random";
 
-  return randStr() + randStr();
-}
 document.addEventListener("DOMContentLoaded", function() {
   var randomString = `Random String: <span>${generateRandomString()}</span>`;
   window.setTimeout(function() {
