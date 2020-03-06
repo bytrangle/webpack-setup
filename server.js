@@ -3,8 +3,8 @@ const path = require("path");
 const port = 5000;
 const app = express();
 
-app.get("/index.js", (req, res) => {
-  res.sendFile(path.join(__dirname + "/../src/index.js"));
+app.get("/bundle.js", (req, res) => {
+  res.sendFile(path.join(__dirname + "/bundle.js"));
 });
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
